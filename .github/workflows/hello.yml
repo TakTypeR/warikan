@@ -18,9 +18,8 @@ jobs:
         run: ls -la
 
       - name: ランナーの情報
-        run: 
+        run: |
           echo "OS: ${{ runner.os }}"
           echo "ブランチ: ${{ github.ref_name }}"
           echo "きっかけ: ${{ github.event_name }}"
           python3 --version
-          
